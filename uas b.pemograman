@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int diskon(){
+	float pembayaran, potongan_harga, total_pembelian;
+	cout<<" Masukan total belanjaan : ";
+	cin>> pembayaran;
+	
+	if (pembayaran> 500000){
+		potongan_harga = pembayaran*0.10;
+		total_pembelian= pembayaran - potongan_harga;
+		cout<< endl;
+		cout<<" anda mendapatkan potongan harga 10% "<<endl;
+	}
+	
+	cout<< "jumlah potongan : "<< potongan_harga<<endl;
+	cout<< "total yang harus di bayarkan : "<<total_pembelian << endl;
+}
+int main(){
+	diskon();
+	return 0;
+}
